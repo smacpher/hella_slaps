@@ -1,0 +1,468 @@
+/* 
+
+Theme Name: Hella Slaps
+Author: Sean MacPherson
+Author URI: smacpher.github.io
+Version: 1.0
+
+*/
+
+
+
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: ArcaMajora;
+    src: url(fonts/ArcaMajora-Heavy.otf);
+}
+
+@font-face {
+    font-family: Arkhip;
+    src: url(fonts/Arkhip_font.otf);
+}
+
+.site-content {
+    display: flex;
+    
+}
+
+.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+/* HEADER */
+
+.site-header {
+    padding: 2em;
+    
+}
+
+.site-header h1 {
+    font-family: 'ArcaMajora', sans-serif;
+    font-size: 5em;
+    color: #f6f6f6;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.site-header h2 {
+    font-family: 'ArcaMajora', sans-serif;
+    font-size: 1em;
+    color: #f6f6f6;
+}
+
+.header-content {
+    z-index: 1;
+    position: relative;
+    margin-top: 4em;
+}
+
+.header-background {
+    z-index: -1;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    height: 12em;
+    display: inline-block;
+}
+
+.color1{
+    background-color: #a8e6cf;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.color2 {
+    background-color: #dcedc1;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    
+}
+
+.color3 {
+    background-color: #ffd3b6;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.color4 {
+    background-color: #ffaaa5;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+.color5 {
+    background-color: #ff8b94;
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+/* NAV-MENU */
+
+.genre-nav {
+    
+}
+
+
+.genre-nav ul li {
+    display: inline-block;
+    color: #D3D3D3;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.genre-nav ul li a {
+    color: inherit;
+}
+
+.genre-nav ul li a:hover {
+    color: #333;
+}
+
+.genre-nav ul.menu > li:after {
+    content: ' |';
+}
+
+.genre-nav ul.menu > li:last-child:after {
+    display: none;
+}
+
+/* MAIN-COLUMN */
+
+.main-column {
+    flex: 1;
+    float: left;
+    margin-top: -3em;
+}
+
+.side-bar {
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin-top: -3em;
+}
+
+
+/* WIDGETS */
+
+.widget-item {
+    float: right;
+    padding: 1em;
+    margin: 1em;
+}
+
+.widget-item:nth-child(5n+5){
+    background-color: #a8e6cf;
+}
+
+.widget-item:nth-child(5n+4){
+    background-color: #dcedc1;
+}
+
+.widget-item:nth-child(5n+3){
+    background-color: #ffd3b6;
+}
+
+.widget-item:nth-child(5n+2){
+    background-color: #ffaaa5;
+}
+
+.widget-item:nth-child(5n+1){
+    background-color: #ff8b94;
+}
+
+.widget-title {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.widget-item ul {
+    list-style: none;
+}
+
+.widget-item ul li {
+    color: #fff;
+    display: block;
+}
+
+.widget-item ul li a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    color: inherit;
+}
+
+.widget-item ul li a:hover {
+    color: #333;
+}
+
+.tagcloud a{
+    color: #fff;
+    padding: 0.3em;
+    font-family: Oswald, sans-serif;
+}
+
+.tagcloud a:nth-child(5n+5){
+    background-color: #a8e6cf;
+}
+
+.tagcloud a:nth-child(5n+4){
+    background-color: #dcedc1;
+}
+
+.tagcloud a:nth-child(5n+3){
+    background-color: #ffd3b6;
+}
+
+.tagcloud a:nth-child(5n+2){
+    background-color: #ffaaa5;
+}
+
+.tagcloud a:nth-child(5n+1){
+    background-color: #ff8b94;
+}
+
+.tagcloud a:hover {
+    color: #333;
+}
+
+/* SEARCH */
+
+
+.search-btn {
+    float: right;
+    color: #fff;
+    font-size: 0.75em;
+    padding: 0;
+    border: 0.05em solid #fff;
+}
+
+.input-field ::-webkit-input-placeholder {
+   color: white;
+}
+
+.btn-flat {
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    
+}
+
+.btn-flat:hover {
+    color: #333;
+}
+
+.input-field input[type=text] {
+    border-bottom: 0.05em solid #fff;
+    font-family: Oswald, sans-serif;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: none;
+     box-shadow: none;
+     
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+     border-bottom: none;
+     box-shadow: none;
+}
+
+/* POSTS  */
+
+.post {
+    margin: 1em;
+    padding: 1em;
+}
+
+.post h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.post h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post h1 a:hover {
+    color: #fff;
+}
+
+.post-info {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+}
+
+.post:nth-child(5n+1){
+    background-color: #a8e6cf;
+}
+
+.post:nth-child(5n+2){
+    background-color: #dcedc1;
+}
+
+.post:nth-child(5n+3){
+    background-color: #ffd3b6;
+}
+
+.post:nth-child(5n+4){
+    background-color: #ffaaa5;
+}
+
+.post:nth-child(5n+5){
+    background-color: #ff8b94;
+}
+
+.author-tag {
+    text-decoration: none;
+    color: #fff;
+}
+
+.author-tag:hover {
+    color: #333;
+}
+
+.post-category {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #fff;
+}
+
+.post-category li {
+    display: inline-block;
+}
+
+.post-category a {
+    color: inherit;
+}
+
+.post-category a:hover {
+    color: #333;
+}
+
+.post-category ul li:after {
+    content: ' |';
+}
+
+.post-category ul li:last-child:after {
+    display: none;
+}
+
+.post p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+#edit-post {
+    font-size: 0.75em;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #fff;
+
+}
+
+#edit-post:hover {
+    color: #f6f6f6;
+}
+
+/* POSTS LINK */
+
+.posts-link {
+    text-align: right;
+    color: #D3D3D3;
+    margin: 1em;
+}
+
+.posts-link a{
+    color: inherit;
+}
+
+.posts-link a:hover {
+    color: #f6f6f6;
+}
+
+/* COMMENTS */
+
+.comment-area {
+    margin: 1em;
+}
+
+.comment-reply-title {
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.single-comment {
+    margin: 1em;
+    border-bottom: 0.15em solid #fff;
+    padding: 1em;
+    font-size: 0.75em;
+}
+
+
+.comment-meta {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #D3D3D3;
+}
+
+.comment-meta a{
+    color: inherit;
+}
+
+.comment-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+
+.reply {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.5em;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.site-footer h1{
+    font-family: 'ArcaMajora', sans-serif;
+    font-weight: lighter;
+    font-size: 0.5em;
+    color: #D3D3D3;
+}
+
+
+
+
+
